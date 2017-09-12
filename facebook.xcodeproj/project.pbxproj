@@ -13,6 +13,9 @@
 		F234A7A11F4D548600A82668 /* facebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F234A79F1F4D548600A82668 /* facebook.xcdatamodeld */; };
 		F234A7A31F4D548600A82668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F234A7A21F4D548600A82668 /* Assets.xcassets */; };
 		F234A7A61F4D548600A82668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234A7A41F4D548600A82668 /* LaunchScreen.storyboard */; };
+		F234A7AF1F4D549A00A82668 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F234A7AE1F4D549A00A82668 /* Social.framework */; };
+		F234A7B91F4D726C00A82668 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F234A7B81F4D726C00A82668 /* MessageUI.framework */; };
+		F234A7BB1F4D793100A82668 /* resim1.png in Resources */ = {isa = PBXBuildFile; fileRef = F234A7BA1F4D793100A82668 /* resim1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F234A7A21F4D548600A82668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F234A7A51F4D548600A82668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F234A7A71F4D548600A82668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F234A7AE1F4D549A00A82668 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F234A7B81F4D726C00A82668 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F234A7BA1F4D793100A82668 /* resim1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resim1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F234A7B91F4D726C00A82668 /* MessageUI.framework in Frameworks */,
+				F234A7AF1F4D549A00A82668 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 			children = (
 				F234A7971F4D548600A82668 /* facebook */,
 				F234A7961F4D548600A82668 /* Products */,
+				F234A7AD1F4D549A00A82668 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				F234A7981F4D548600A82668 /* AppDelegate.swift */,
+				F234A7BA1F4D793100A82668 /* resim1.png */,
 				F234A79A1F4D548600A82668 /* ViewController.swift */,
 				F234A79C1F4D548600A82668 /* Main.storyboard */,
 				F234A7A21F4D548600A82668 /* Assets.xcassets */,
@@ -65,6 +75,15 @@
 				F234A79F1F4D548600A82668 /* facebook.xcdatamodeld */,
 			);
 			path = facebook;
+			sourceTree = "<group>";
+		};
+		F234A7AD1F4D549A00A82668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F234A7B81F4D726C00A82668 /* MessageUI.framework */,
+				F234A7AE1F4D549A00A82668 /* Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +147,7 @@
 			files = (
 				F234A7A61F4D548600A82668 /* LaunchScreen.storyboard in Resources */,
 				F234A7A31F4D548600A82668 /* Assets.xcassets in Resources */,
+				F234A7BB1F4D793100A82668 /* resim1.png in Resources */,
 				F234A79E1F4D548600A82668 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

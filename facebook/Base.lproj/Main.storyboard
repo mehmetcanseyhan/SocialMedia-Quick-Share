@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,132 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paşlaşım İçerikleri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Px5-xr-o6m">
+                                <rect key="frame" x="0.0" y="20" width="375" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="mss-HW-j51"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.21609538419999999" blue="0.25804316049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpj-GO-CsM">
+                                <rect key="frame" x="0.0" y="420" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rx9-cE-Gdu"/>
+                                </constraints>
+                                <state key="normal" title="Facebook'a Gönder">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gonderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7R-SW-OWW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resim1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gpp-9Z-6J7">
+                                <rect key="frame" x="0.0" y="244" width="375" height="158"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="CoB-hu-uUa">
+                                <rect key="frame" x="0.0" y="79" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.96431046291773126" green="1" blue="0.92932034033586697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="qAg-f8-fZC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mesajınız" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q93-mx-Y9y">
+                                <rect key="frame" x="0.0" y="50" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Vwe-Kv-tCK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Görüntünüz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vty-Ih-S3M">
+                                <rect key="frame" x="0.0" y="215" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="k5H-bd-Guw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e32-LJ-A58">
+                                <rect key="frame" x="0.0" y="496" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JQB-2R-p6b"/>
+                                </constraints>
+                                <state key="normal" title="SMS Gönder"/>
+                                <connections>
+                                    <action selector="smsGonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugY-Ix-bia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1C-dP-osf">
+                                <rect key="frame" x="0.0" y="458" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I3B-LF-yQf"/>
+                                </constraints>
+                                <state key="normal" title="Twitter'a Gonder"/>
+                                <connections>
+                                    <action selector="twitteraGonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqz-oJ-S5u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgN-Df-QXi">
+                                <rect key="frame" x="0.0" y="534" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fgh-ui-lbb"/>
+                                </constraints>
+                                <state key="normal" title="E-Mail Gönder"/>
+                                <connections>
+                                    <action selector="emailGonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DTe-xc-xEW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92382061545145566" green="0.92321459290434593" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q93-mx-Y9y" firstAttribute="trailing" secondItem="CoB-hu-uUa" secondAttribute="trailing" id="34k-nO-gUg"/>
+                            <constraint firstItem="CoB-hu-uUa" firstAttribute="trailing" secondItem="vty-Ih-S3M" secondAttribute="trailing" id="5jG-Dj-q3E"/>
+                            <constraint firstItem="q93-mx-Y9y" firstAttribute="top" secondItem="Px5-xr-o6m" secondAttribute="bottom" constant="8" symbolic="YES" id="6WR-QE-gJM"/>
+                            <constraint firstItem="Px5-xr-o6m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7cM-MA-diy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XgN-Df-QXi" secondAttribute="bottom" constant="103" id="C6y-A7-82V"/>
+                            <constraint firstItem="gpp-9Z-6J7" firstAttribute="top" secondItem="vty-Ih-S3M" secondAttribute="bottom" constant="8" symbolic="YES" id="F3i-2l-TcC"/>
+                            <constraint firstItem="kpj-GO-CsM" firstAttribute="leading" secondItem="c1C-dP-osf" secondAttribute="leading" id="GFP-7t-kd9"/>
+                            <constraint firstItem="CoB-hu-uUa" firstAttribute="leading" secondItem="vty-Ih-S3M" secondAttribute="leading" id="GJt-jv-g33"/>
+                            <constraint firstItem="Px5-xr-o6m" firstAttribute="leading" secondItem="q93-mx-Y9y" secondAttribute="leading" id="Jn4-0p-yaU"/>
+                            <constraint firstItem="gpp-9Z-6J7" firstAttribute="leading" secondItem="kpj-GO-CsM" secondAttribute="leading" id="OXq-Ws-z7d"/>
+                            <constraint firstItem="c1C-dP-osf" firstAttribute="leading" secondItem="e32-LJ-A58" secondAttribute="leading" id="QaB-Mt-cey"/>
+                            <constraint firstItem="vty-Ih-S3M" firstAttribute="trailing" secondItem="gpp-9Z-6J7" secondAttribute="trailing" id="R34-Pk-635"/>
+                            <constraint firstItem="c1C-dP-osf" firstAttribute="top" secondItem="kpj-GO-CsM" secondAttribute="bottom" constant="8" symbolic="YES" id="TOa-a2-xhm"/>
+                            <constraint firstItem="vty-Ih-S3M" firstAttribute="top" secondItem="CoB-hu-uUa" secondAttribute="bottom" constant="8" symbolic="YES" id="VjJ-16-4GX"/>
+                            <constraint firstItem="kpj-GO-CsM" firstAttribute="top" secondItem="gpp-9Z-6J7" secondAttribute="bottom" constant="18" id="X6G-rn-Ar0"/>
+                            <constraint firstAttribute="trailing" secondItem="Px5-xr-o6m" secondAttribute="trailing" id="ZHO-EV-yaw"/>
+                            <constraint firstItem="XgN-Df-QXi" firstAttribute="top" secondItem="e32-LJ-A58" secondAttribute="bottom" constant="8" symbolic="YES" id="aX3-eN-DSI"/>
+                            <constraint firstItem="Px5-xr-o6m" firstAttribute="trailing" secondItem="q93-mx-Y9y" secondAttribute="trailing" id="dKJ-9b-Nzy"/>
+                            <constraint firstItem="q93-mx-Y9y" firstAttribute="leading" secondItem="CoB-hu-uUa" secondAttribute="leading" id="eTL-dn-WTk"/>
+                            <constraint firstItem="vty-Ih-S3M" firstAttribute="leading" secondItem="gpp-9Z-6J7" secondAttribute="leading" id="iYO-H0-3A9"/>
+                            <constraint firstItem="kpj-GO-CsM" firstAttribute="trailing" secondItem="c1C-dP-osf" secondAttribute="trailing" id="j9U-mL-jsN"/>
+                            <constraint firstItem="e32-LJ-A58" firstAttribute="trailing" secondItem="XgN-Df-QXi" secondAttribute="trailing" id="ljg-UG-GmK"/>
+                            <constraint firstItem="e32-LJ-A58" firstAttribute="top" secondItem="c1C-dP-osf" secondAttribute="bottom" constant="8" symbolic="YES" id="pXQ-E8-hLV"/>
+                            <constraint firstItem="gpp-9Z-6J7" firstAttribute="trailing" secondItem="kpj-GO-CsM" secondAttribute="trailing" id="rYJ-Di-e6a"/>
+                            <constraint firstItem="CoB-hu-uUa" firstAttribute="top" secondItem="q93-mx-Y9y" secondAttribute="bottom" constant="8" symbolic="YES" id="tmU-ix-ueg"/>
+                            <constraint firstItem="e32-LJ-A58" firstAttribute="leading" secondItem="XgN-Df-QXi" secondAttribute="leading" id="vtO-sM-mO0"/>
+                            <constraint firstItem="c1C-dP-osf" firstAttribute="trailing" secondItem="e32-LJ-A58" secondAttribute="trailing" id="wwE-gZ-sQD"/>
+                            <constraint firstItem="Px5-xr-o6m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ycM-yI-0L0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resimTasiyici" destination="gpp-9Z-6J7" id="P3j-qE-aN8"/>
+                        <outlet property="textAlani" destination="CoB-hu-uUa" id="c6y-li-lOY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="resim1.png" width="960" height="618"/>
+    </resources>
 </document>
