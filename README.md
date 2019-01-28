@@ -1,2 +1,2 @@
-<h1>Short Sends</h1>
-It provides user posts send to all social account as short.
+<h1>Quick Share</h1>
+It allows user to post content to their social accounts with ease.
