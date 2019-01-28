@@ -3,4 +3,4 @@ It allows user to post content to their social accounts with ease.
 
 <h2>Screen Gif</h2>
 
-![](screen.gif)
+![alt text](screen.png)
